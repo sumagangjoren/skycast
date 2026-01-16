@@ -127,8 +127,8 @@ function App() {
                         </svg>
                     </div>
                     <div>
-                        <h1 className="text-3xl font-bold tracking-tight">SkyCast AI</h1>
-                        <p className="text-white/40 text-sm font-medium">Weather intelligence</p>
+                        <h1 className="text-3xl font-bold tracking-tight">SkyCast</h1>
+                        <p className="text-white/40 text-sm font-medium">Weather Forecast</p>
                     </div>
                 </div>
 
