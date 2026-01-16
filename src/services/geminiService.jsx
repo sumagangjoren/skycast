@@ -1,8 +1,10 @@
 import { GoogleGenAI } from "@google/genai";
 
 export const getWeatherInsights = async (weather, location) => {
+  console.log('hi')
+  console.log(import.meta.env.GEMINI_API_KEY)
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
     const prompt = `
       Provide a concise, friendly weather summary for ${location.name}.
       Current Temp: ${weather.current.temp}°
