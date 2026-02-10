@@ -42,20 +42,6 @@ function App() {
         }
     }
 
-    // const updateWeatherData = (async (location, unit) => {
-    //     setState(prev => ({ ...prev, loading: true, error: null }));
-    //     try {
-    //         const weather = await fetchWeather(location.latitude, location.longitude, unit);
-    //         setState(prev => ({ ...prev, weather, currentLocation: location, loading: false }));
-
-    //         // Fetch AI Insight
-    //         // const insight = await getWeatherInsights(weather, location);
-    //         // setAiInsight(insight);
-    //     } catch (err) {
-    //         setState(prev => ({ ...prev, error: "Failed to load weather data. Please try again.", loading: false }));
-    //     }
-    // }, []);
-
     useEffect(() => {
         const initLocation = () => {
             if (navigator.geolocation) {
